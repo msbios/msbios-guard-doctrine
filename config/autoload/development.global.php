@@ -39,7 +39,11 @@ return [
         ]
     ],
 
-
+    'view_manager' => [
+        'template_path_stack' => [
+            __DIR__ . '/../../view',
+        ],
+    ],
 
     \MSBios\Assetic\Module::class => [
 
@@ -79,7 +83,7 @@ return [
         'resource_providers' => [
             \MSBios\Guard\Provider\ResourceProvider::class => [
                 'route/home',
-                \MSBios\Guard\Controller\IndexController::class
+                \MSBios\Application\Controller\IndexController::class
             ]
         ],
 
@@ -88,7 +92,7 @@ return [
         'rule_providers' => [
             \MSBios\Guard\Provider\RuleProvider::class => [
                 'allow' => [
-                    [['USER'], \MSBios\Guard\Controller\IndexController::class],
+                    [['USER'], \MSBios\Application\Controller\IndexController::class],
                 ],
                 'deny' => []
             ]

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "636492f198d20fb36ea4c2c42c954897",
+    "content-hash": "39fd12b9e4afb2d87c1e9435482ba71a",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -2202,6 +2202,56 @@
                 "php"
             ],
             "time": "2018-02-09T13:38:02+00:00"
+        },
+        {
+            "name": "msbios/authentication-doctrine",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msbios/msbios-authentication-doctrine.git",
+                "reference": "2bd83640d72381db2157e265e4cc9967f153bec0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msbios/msbios-authentication-doctrine/zipball/2bd83640d72381db2157e265e4cc9967f153bec0",
+                "reference": "2bd83640d72381db2157e265e4cc9967f153bec0",
+                "shasum": ""
+            },
+            "require": {
+                "msbios/authentication": "^1.0"
+            },
+            "require-dev": {
+                "msbios/application": "^1.0",
+                "msbios/doctrine": "^1.0",
+                "msbios/test": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "zf": {
+                    "component": "MSBios\\Authentication\\Doctrine"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MSBios\\Authentication\\Doctrine\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Judzhin Miles",
+                    "email": "info@msbios.com"
+                }
+            ],
+            "description": "MSBios Authentication Doctrine",
+            "homepage": "https://github.com/msbios/msbios-authentication-doctrine",
+            "keywords": [
+                "php"
+            ],
+            "time": "2018-02-28T12:54:29+00:00"
         },
         {
             "name": "msbios/db",

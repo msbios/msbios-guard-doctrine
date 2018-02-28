@@ -34,7 +34,8 @@
     "msbios/debug": "^1.0",
     "msbios/test": "^1.0",
     "msbios/doctrine": "^1.0",
-    "msbios/resource-doctrine": "^1.0"
+    "msbios/resource-doctrine": "^1.0",
+    "msbios/authentication-doctrine": "^1.0"
   },
   "scripts": {
     "cs-check": "phpcs",

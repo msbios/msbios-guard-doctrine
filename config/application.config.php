@@ -8,6 +8,7 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
+
         'Zend\Cache',
         'Zend\Paginator',
         'Zend\Validator',
@@ -44,6 +45,7 @@ return [
         'MSBios\Guard\Resource',
 
         'MSBios\Doctrine',
+        'MSBios\Authentication\Doctrine',
         'MSBios\Form\Doctrine',
         'MSBios\Resource\Doctrine',
         'MSBios\Guard\Doctrine',
