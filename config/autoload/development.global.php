@@ -6,7 +6,6 @@
 
 namespace MSBios\Guard\Doctrine;
 
-use MSBios\Authentication\Initializer\AuthenticationServiceInitializer;
 use Zend\ServiceManager\Factory\InvokableFactory;
 
 return [
@@ -33,10 +32,6 @@ return [
             \MSBios\Application\Controller\IndexController::class =>
                 Controller\IndexController::class
         ],
-        'initializers' => [
-            AuthenticationServiceInitializer::class =>
-                new AuthenticationServiceInitializer
-        ]
     ],
 
     'view_manager' => [
@@ -82,7 +77,6 @@ return [
         // Keys are the provider service names, values are the options to be passed to the provider
         'resource_providers' => [
             \MSBios\Guard\Provider\ResourceProvider::class => [
-                'route/home',
                 \MSBios\Application\Controller\IndexController::class
             ]
         ],

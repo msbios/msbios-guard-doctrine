@@ -7,4 +7,5 @@
 namespace MSBios\Guard\Doctrine;
 
 return [
+    // ...
 ];

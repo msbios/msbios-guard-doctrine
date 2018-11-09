@@ -8,7 +8,10 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
-
+        'MSBios\Paginator\Doctrine',
+        'MSBios\Cache',
+        'Zend\Serializer',
+        'MSBios\Validator',
         'Zend\Cache',
         'Zend\Paginator',
         'Zend\Validator',
@@ -25,10 +28,8 @@ return [
         'Zend\Router',
         'Zend\Form',
         'Zend\I18n',
-
         'DoctrineModule',
         'DoctrineORMModule',
-
         'MSBios\Test',
         'MSBios\I18n',
         'MSBios\Db',
@@ -43,17 +44,13 @@ return [
         'MSBios\View',
         'MSBios\Guard',
         'MSBios\Guard\Resource',
-
         'MSBios\Doctrine',
         'MSBios\Authentication\Doctrine',
         'MSBios\Form\Doctrine',
         'MSBios\Resource\Doctrine',
         'MSBios\Guard\Doctrine',
         'MSBios\Guard\Resource\Doctrine',
-
-        'Zend\Log',
         'ZendDeveloperTools',
-
     ],
     'module_listener_options' => [
         'module_paths' => [
